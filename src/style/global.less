@@ -1,0 +1,63 @@
+@import './var.less';
+
+body {
+  @apply text-2xl m-0 p-0;
+  -webkit-text-size-adjust: none !important;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+iframe {
+  display: none;
+}
+
+#root {
+  @apply w-full h-full bg-white
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: HYZhongHei-J;
+}
+
+@font-face {
+  font-family: 'HYe0gj';
+  src: url('https://yfb-juna.oss-cn-shanghai.aliyuncs.com/font/HYChaoCuYuanJ.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HYZhongHei-J';
+  src: url('https://yfb-juna.oss-cn-shanghai.aliyuncs.com/font/HYZhongHeiJ.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FZTYSJW--GB1-0';
+  src: url('https://yfb-juna.oss-cn-shanghai.aliyuncs.com/font/FZTYSJ.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HYi4gj';
+  src: url('https://yfb-juna.oss-cn-shanghai.aliyuncs.com/font/HYXueJunTiJ.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@keyframes fade-in-top {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-top {
+  animation: fade-in-top 0.2s linear forwards;
+}
